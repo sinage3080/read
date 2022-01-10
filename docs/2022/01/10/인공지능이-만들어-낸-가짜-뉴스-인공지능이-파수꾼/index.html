@@ -1,0 +1,738 @@
+<!-- =========================
+     Page Breadcrumb   
+============================== -->
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from 127.0.0.1/wordpress/2022/01/10/인공지능이-만들어-낸-가짜-뉴스-인공지능이-파수꾼/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Jan 2022 06:43:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<title>인공지능이 만들어 낸 가짜 뉴스 인공지능이 파수꾼 역할 &#8211; powerball algorithm blog</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="powerball algorithm blog &raquo; Feed" href="../../../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="powerball algorithm blog &raquo; Comments Feed" href="../../../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="powerball algorithm blog &raquo; 인공지능이 만들어 낸 가짜 뉴스 인공지능이 파수꾼 역할 Comments Feed" href="feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/127.0.0.1\/wordpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.3"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='../../../../wp-includes/css/dist/block-library/style.minc8d8.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='newsup-fonts-css'  href='http://fonts.googleapis.com/css?family=Montserrat%3A400%2C500%2C700%2C800%7CWork%2BSans%3A300%2C400%2C500%2C600%2C700%2C800%2C900%26display%3Dswap&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='../../../../wp-content/themes/newsup/css/bootstrapc8d8.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='newsup-style-css'  href='../../../../wp-content/themes/news-talk/stylec8d8.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='../../../../wp-content/themes/newsup/css/font-awesomec8d8.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-css'  href='../../../../wp-content/themes/newsup/css/owl.carouselc8d8.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='smartmenus-css'  href='../../../../wp-content/themes/newsup/css/jquery.smartmenus.bootstrapc8d8.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='newsup-style-parent-css'  href='../../../../wp-content/themes/newsup/stylec8d8.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='newstalk-style-css'  href='../../../../wp-content/themes/news-talk/style5152.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='newstalk-default-css-css'  href='../../../../wp-content/themes/news-talk/css/colors/defaultc8d8.css?ver=5.8.3' type='text/css' media='all' />
+<script type='text/javascript' src='../../../../wp-includes/js/jquery/jquery.minaf6c.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='../../../../wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='../../../../wp-content/themes/newsup/js/navigationc8d8.js?ver=5.8.3' id='newsup-navigation-js'></script>
+<script type='text/javascript' src='../../../../wp-content/themes/newsup/js/bootstrapc8d8.js?ver=5.8.3' id='bootstrap-js'></script>
+<script type='text/javascript' src='../../../../wp-content/themes/newsup/js/owl.carousel.minc8d8.js?ver=5.8.3' id='owl-carousel-min-js'></script>
+<script type='text/javascript' src='../../../../wp-content/themes/newsup/js/jquery.smartmenusc8d8.js?ver=5.8.3' id='smartmenus-js-js'></script>
+<script type='text/javascript' src='../../../../wp-content/themes/newsup/js/jquery.smartmenus.bootstrapc8d8.js?ver=5.8.3' id='bootstrap-smartmenus-js-js'></script>
+<script type='text/javascript' src='../../../../wp-content/themes/newsup/js/jquery.marqueec8d8.js?ver=5.8.3' id='newsup-marquee-js-js'></script>
+<script type='text/javascript' src='../../../../wp-content/themes/newsup/js/mainc8d8.js?ver=5.8.3' id='newsup-main-js-js'></script>
+<link rel="https://api.w.org/" href="../../../../wp-json/index.html" /><link rel="alternate" type="application/json" href="../../../../wp-json/wp/v2/posts/23.json" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8.3" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='../../../../index40a0.html?p=23' />
+<link rel="alternate" type="application/json+oembed" href="../../../../wp-json/oembed/1.0/embeda048.json?url=http%3A%2F%2F127.0.0.1%2Fwordpress%2F2022%2F01%2F10%2F%25ec%259d%25b8%25ea%25b3%25b5%25ec%25a7%2580%25eb%258a%25a5%25ec%259d%25b4-%25eb%25a7%258c%25eb%2593%25a4%25ec%2596%25b4-%25eb%2582%25b8-%25ea%25b0%2580%25ec%25a7%259c-%25eb%2589%25b4%25ec%258a%25a4-%25ec%259d%25b8%25ea%25b3%25b5%25ec%25a7%2580%25eb%258a%25a5%25ec%259d%25b4-%25ed%258c%258c%25ec%2588%2598%25ea%25be%25bc%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../../../../wp-json/oembed/1.0/embedc607?url=http%3A%2F%2F127.0.0.1%2Fwordpress%2F2022%2F01%2F10%2F%25ec%259d%25b8%25ea%25b3%25b5%25ec%25a7%2580%25eb%258a%25a5%25ec%259d%25b4-%25eb%25a7%258c%25eb%2593%25a4%25ec%2596%25b4-%25eb%2582%25b8-%25ea%25b0%2580%25ec%25a7%259c-%25eb%2589%25b4%25ec%258a%25a4-%25ec%259d%25b8%25ea%25b3%25b5%25ec%25a7%2580%25eb%258a%25a5%25ec%259d%25b4-%25ed%258c%258c%25ec%2588%2598%25ea%25be%25bc%2F&amp;format=xml" />
+<link rel="pingback" href="../../../../xmlrpc.php"><style type="text/css" id="custom-background-css">
+    .wrapper { background-color: #eee; }
+</style>
+    <style type="text/css">
+            body .site-title a,
+        body .site-description {
+            color: ##143745;
+        }
+
+        .site-branding-text .site-title a {
+                font-size: px;
+            }
+
+            @media only screen and (max-width: 640px) {
+                .site-branding-text .site-title a {
+                    font-size: 40px;
+
+                }
+            }
+
+            @media only screen and (max-width: 375px) {
+                .site-branding-text .site-title a {
+                    font-size: 32px;
+
+                }
+            }
+
+        </style>
+    </head>
+<body class="post-template-default single single-post postid-23 single-format-standard wp-embed-responsive  ta-hide-date-author-in-list" >
+<div id="page" class="site">
+<a class="skip-link screen-reader-text" href="#content">
+Skip to content</a>
+    <div class="wrapper" id="custom-background-css">
+        <header class="mg-headwidget">
+            <!--==================== TOP BAR ====================-->
+
+            <div class="mg-head-detail hidden-xs">
+    <div class="container-fluid">
+        <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                <ul class="info-left">
+                            <li>Mon. Jan 10th, 2022             <span  id="time" class="time"></span>
+                    </li>
+                    </ul>
+
+                           </div>
+
+
+                        <div class="col-md-6 col-xs-12">
+                <ul class="mg-social info-right">
+                    
+                                                                                                                                      
+                                      </ul>
+            </div>
+                    </div>
+    </div>
+</div>
+            <div class="clearfix"></div>
+                        <div class="mg-nav-widget-area-back" style='background-image: url("../../../../wp-content/themes/news-talk/images/head-back.jpg" );'>
+                        <div class="overlay">
+              <div class="inner"  style="background-color:rgba(32,47,91,0.4);" > 
+                <div class="container-fluid">
+                    <div class="mg-nav-widget-area">
+                        <div class="row align-items-center">
+                            <div class="col-md-3 col-sm-4 text-center-xs">
+                                <div class="navbar-header">
+                                                                <div class="site-branding-text">
+                                <h1 class="site-title"> <a href="../../../../index.html" rel="home">powerball algorithm blog</a></h1>
+                                <p class="site-description">Just another WordPress site</p>
+                                </div>
+                                                              </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+              </div>
+              </div>
+          </div>
+    <div class="mg-menu-full">
+      <nav class="navbar navbar-expand-lg navbar-wp">
+        <div class="container-fluid flex-row">
+          
+                <!-- Right nav -->
+                    <div class="m-header pl-3 ml-auto my-2 my-lg-0 position-relative align-items-center">
+                                                <a class="mobilehomebtn" href="http://127.0.0.1/wordpress"><span class="fa fa-home"></span></a>
+                        
+                        <div class="dropdown ml-auto show mg-search-box pr-3">
+                            <a class="dropdown-toggle msearch ml-auto" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               <i class="fa fa-search"></i>
+                            </a>
+
+                            <div class="dropdown-menu searchinner" aria-labelledby="dropdownMenuLink">
+                        <form role="search" method="get" id="searchform" action="http://127.0.0.1/wordpress/">
+  <div class="input-group">
+    <input type="search" class="form-control" placeholder="Search" value="" name="s" />
+    <span class="input-group-btn btn-default">
+    <button type="submit" class="btn"> <i class="fa fa-search"></i> </button>
+    </span> </div>
+</form>                      </div>
+                        </div>
+                        <!-- navbar-toggle -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wp" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <i class="fa fa-bars"></i>
+                        </button>
+                        <!-- /navbar-toggle -->
+                    </div>
+                    <!-- /Right nav --> 
+          
+                  <div class="collapse navbar-collapse" id="navbar-wp">
+                    <div class="d-md-block">
+                  <ul class="nav navbar-nav mr-auto"><li class="nav-item menu-item "><a class="nav-link " href="../../../../index.html" title="Home">Home</a></li></ul>
+                </div>    
+                  </div>
+
+                <!-- Right nav -->
+                    <div class="d-none d-lg-block pl-3 ml-auto my-2 my-lg-0 position-relative align-items-center">
+                        <div class="dropdown show mg-search-box pr-2">
+                            <a class="dropdown-toggle msearch ml-auto" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               <i class="fa fa-search"></i>
+                            </a>
+
+                            <div class="dropdown-menu searchinner" aria-labelledby="dropdownMenuLink">
+                        <form role="search" method="get" id="searchform" action="http://127.0.0.1/wordpress/">
+  <div class="input-group">
+    <input type="search" class="form-control" placeholder="Search" value="" name="s" />
+    <span class="input-group-btn btn-default">
+    <button type="submit" class="btn"> <i class="fa fa-search"></i> </button>
+    </span> </div>
+</form>                      </div>
+                        </div>
+                        
+                    </div>
+                    <!-- /Right nav -->  
+          </div>
+      </nav> <!-- /Navigation -->
+    </div>
+</header>
+<div class="clearfix"></div>
+ <!--==================== Newsup breadcrumb section ====================-->
+<!-- =========================
+     Page Content Section      
+============================== -->
+<main id="content">
+    <!--container-->
+    <div class="container-fluid">
+      <!--row-->
+      <div class="row">
+        <!--col-md-->
+                                                <div class="col-md-9">
+                    		                  <div class="mg-blog-post-box"> 
+              <div class="mg-header">
+                                <div class="mg-blog-category"> 
+                      <a class="newsup-categories category-color-1" href="../../../../category/uncategorized/index.html" alt="View all posts in Uncategorized"> 
+                                 Uncategorized
+                             </a>                </div>
+                                <h1 class="title single"> <a title="Permalink to: 인공지능이 만들어 낸 가짜 뉴스 인공지능이 파수꾼 역할">
+                  인공지능이 만들어 낸 가짜 뉴스 인공지능이 파수꾼 역할</a>
+                </h1>
+
+                <div class="media mg-info-author-block"> 
+                                    <a class="mg-author-pic" href="../../../../author/user/index.html"> <img alt='' src='http://2.gravatar.com/avatar/b58996c504c5638798eb6b511e6f49af?s=150&amp;d=mm&amp;r=g' srcset='http://2.gravatar.com/avatar/b58996c504c5638798eb6b511e6f49af?s=300&#038;d=mm&#038;r=g 2x' class='avatar avatar-150 photo' height='150' width='150' loading='lazy'/> </a>
+                                  <div class="media-body">
+                                        <h4 class="media-heading"><span>By</span><a href="../../../../author/user/index.html">user</a></h4>
+                                                            <span class="mg-blog-date"><i class="fa fa-clock-o"></i> 
+                      Jan 10, 2022</span>
+                                      </div>
+                </div>
+              </div>
+                            <article class="small single">
+                
+<p><strong>인공지능이 만들어 낸 가짜 뉴스 인공지능이 파수꾼 역할</strong></p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="622" height="365" src="../../../../wp-content/uploads/2022/01/pasted-image-0-7.png" alt="" class="wp-image-24"/></figure>
+
+
+
+<p>소셜 네트워크를 어지럽히고 있는 가짜뉴스를 AI가 나섰습니다.</p>
+
+
+
+<p>최근에 전세계적으로 이러한 불법 온라인 범죄가 늘어나고 있는 상황에서</p>
+
+
+
+<p>이러한 불법 온라인 범죄에 대응하는 움직임 또한 늘어나고 있습니다.</p>
+
+
+
+<p>엔지니어링 전문 매체 크리에이트 디지털에 따르면 MIT 링컨 연구소에서 구축을 한</p>
+
+
+
+<p>리오 소프트웨어가 소셜미디어 안의 가짜뉴스를 탐색한다는 보도를 했습니다.</p>
+
+
+
+<p>링컨 연구소의 소프트웨어 개발자들이 만든 해당 인공지능 인플루언스&nbsp;</p>
+
+
+
+<p>정찰 시스템은 SNS와 같은 소셜네트워크를 통해서 사실이 아닌 잘못 되어 있는</p>
+
+
+
+<p>허위정보를 퍼뜨리고 있는 소셜 미디어 계정들을 자동적으로 감지하고</p>
+
+
+
+<p>분석하는데 뛰어난 결과를 가져온 것으로 알려졌습니다.</p>
+
+
+
+<p>리오 프로그램은 NLP, ML, 그래프 분석 그리고 새로운 네트워크의</p>
+
+
+
+<p>인과 추론을 통합하여 잠재적인 인플루언스 운영정보를 식별하고</p>
+
+
+
+<p>행동과 내용을 바탕으로 계정을 분류해서 특정 narrative를 확산하고 있는</p>
+
+
+
+<p>인플루언스 계정을 추정하는 것입니다.</p>
+
+
+
+<p>이러한 과정들을 거쳐서 허위정보를 96%의 정확도로 탐지하는것이 가능하며,</p>
+
+
+
+<p>특정 선전 이야기를 확산시키고 있는 인플루언스의 운영 계정의 대한 영향을</p>
+
+
+
+<p>정량화 하여 그들의 선전 컨텐츠를 경고 할 수 있다는것이 링컨 연구소의 설명입니다.</p>
+
+
+
+<p><strong>가짜뉴스의 경우 AI가 가지고 있는 두얼굴</strong></p>
+
+
+
+<p>SNS와 같은 소셜네트워크상에서 AI는 빛과 어둠을 가지고 있습니다.</p>
+
+
+
+<p>한쪽에서는 가짜뉴스를 감시하는 역할을 하지만 한쪽에서는 가짜 뉴스를 생산하고 있는</p>
+
+
+
+<p>어둠을 가지고 있기 때문입니다.</p>
+
+
+
+<p>지난 2018년 5월 3일자 미시간 주립대 뉴스 The Conversation은</p>
+
+
+
+<p>AI가 가짜 뉴스를 탐지하고 생성하는 방법 이라는 제목에서 인공지능은</p>
+
+
+
+<p>온라인 선전을 발견하는것에 매우 쓸모가 있는 있지만 반대로 오해의 소지도</p>
+
+
+
+<p>불러일으킬 수 있을만한 자료를 만드는것에도 놀라울 만큼 능숙하다가 밝혔습니다.</p>
+
+
+
+<p>실제로, 연구자들은 온라인에서 존재하는 가짜 뉴스가 실제 뉴스보다도</p>
+
+
+
+<p>훨씬 빠르고 파급력있게 퍼지고 있으며, 2022년까지 선진국에서는</p>
+
+
+
+<p>실제 사실을 적시한 뉴스보다도 더 많은 오해의 소지가 있는 가짜 뉴스가</p>
+
+
+
+<p>판칠것이라고 전망했습니다.</p>
+
+
+
+<p>지난 2019년 2월 15일자 블룸버그 통신에서는 오픈 인공지능이&nbsp;</p>
+
+
+
+<p>놀라울 정도로 파급력과 설득력이 있는 가짜뉴스의 알고리즘을 만들고,</p>
+
+
+
+<p>예상외로 이와 상반되게 많은 사람들이 가짜뉴스와 진짜뉴스를&nbsp;</p>
+
+
+
+<p>구분하지 못하는 것으로 나타났다 라고 보도한적이 있습니다.</p>
+
+
+
+<p>같은해에 7월 12일자 기사에서는 미국의 경제 전문 매체인 CNBC도</p>
+
+
+
+<p>인공지능이 생산해 내고 있는 가짜뉴스에 대한 위험성을 경고한적이 있습니다.</p>
+
+
+
+<p>즉, 인공지능의 머신러닝이 딥페이크 영상을 빠르게 발전을 시키고 있는 상황에</p>
+
+
+
+<p>해당 기술을 개발했던 연구원들조차 본인들이 실제와 조작 된 내용들을</p>
+
+
+
+<p>구별하지 못했다고 전한바 있습니다.</p>
+
+
+
+<p>아울러, 딥페이크 비디오의 위협을 제거할 뚜렷한 해결책이 현재는 존재하지 않는다고</p>
+
+
+
+<p>경고했습니다.</p>
+
+
+
+<blockquote class="wp-block-quote"><p>파워볼뱅크 에서 <a href="https://kisc.io/" data-type="URL" data-id="https://kisc.io/" target="_blank" rel="noreferrer noopener">파워볼사이트</a> 유저분들께 위에서 말씀 드렸다시피</p><p>파워볼게임 을 즐기시는 본인만의 규칙 그리고 게임 방식을 정하셨다면,</p><p><a href="https://kisc.io/">파워볼전용사이트</a> 를 이용하기 위해 가장 중요한 부분이 있습니다.</p></blockquote>
+                                                     <script>
+    function pinIt()
+    {
+      var e = document.createElement('script');
+      e.setAttribute('type','text/javascript');
+      e.setAttribute('charset','UTF-8');
+      e.setAttribute('src','../../../../../../assets.pinterest.com/js/pinmarklet2a3b.js?r='+Math.random()*99999999);
+      document.body.appendChild(e);
+    }
+    </script>
+                     <div class="post-share">
+                          <div class="post-share-icons cf">
+                           
+                              <a href="https://www.facebook.com/sharer.php?u=http://127.0.0.1/wordpress/2022/01/10/%ec%9d%b8%ea%b3%b5%ec%a7%80%eb%8a%a5%ec%9d%b4-%eb%a7%8c%eb%93%a4%ec%96%b4-%eb%82%b8-%ea%b0%80%ec%a7%9c-%eb%89%b4%ec%8a%a4-%ec%9d%b8%ea%b3%b5%ec%a7%80%eb%8a%a5%ec%9d%b4-%ed%8c%8c%ec%88%98%ea%be%bc/" class="link facebook" target="_blank" >
+                                <i class="fa fa-facebook"></i></a>
+                            
+            
+                              <a href="http://twitter.com/share?url=http://127.0.0.1/wordpress/2022/01/10/%ec%9d%b8%ea%b3%b5%ec%a7%80%eb%8a%a5%ec%9d%b4-%eb%a7%8c%eb%93%a4%ec%96%b4-%eb%82%b8-%ea%b0%80%ec%a7%9c-%eb%89%b4%ec%8a%a4-%ec%9d%b8%ea%b3%b5%ec%a7%80%eb%8a%a5%ec%9d%b4-%ed%8c%8c%ec%88%98%ea%be%bc/&amp;text=%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%EC%9D%B4%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%82%B8%20%EA%B0%80%EC%A7%9C%20%EB%89%B4%EC%8A%A4%20%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%EC%9D%B4%20%ED%8C%8C%EC%88%98%EA%BE%BC%20%EC%97%AD%ED%95%A0" class="link twitter" target="_blank">
+                                <i class="fa fa-twitter"></i></a>
+            
+                              <a href="mailto:?subject=인공지능이%20만들어%20낸%20가짜%20뉴스%20인공지능이%20파수꾼%20역할&#038;body=http://127.0.0.1/wordpress/2022/01/10/%ec%9d%b8%ea%b3%b5%ec%a7%80%eb%8a%a5%ec%9d%b4-%eb%a7%8c%eb%93%a4%ec%96%b4-%eb%82%b8-%ea%b0%80%ec%a7%9c-%eb%89%b4%ec%8a%a4-%ec%9d%b8%ea%b3%b5%ec%a7%80%eb%8a%a5%ec%9d%b4-%ed%8c%8c%ec%88%98%ea%be%bc/" class="link email" target="_blank" >
+                                <i class="fa fa-envelope-o"></i></a>
+
+
+                              <a href="https://www.linkedin.com/sharing/share-offsite/?url=http://127.0.0.1/wordpress/2022/01/10/%ec%9d%b8%ea%b3%b5%ec%a7%80%eb%8a%a5%ec%9d%b4-%eb%a7%8c%eb%93%a4%ec%96%b4-%eb%82%b8-%ea%b0%80%ec%a7%9c-%eb%89%b4%ec%8a%a4-%ec%9d%b8%ea%b3%b5%ec%a7%80%eb%8a%a5%ec%9d%b4-%ed%8c%8c%ec%88%98%ea%be%bc/&amp;title=%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%EC%9D%B4%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%82%B8%20%EA%B0%80%EC%A7%9C%20%EB%89%B4%EC%8A%A4%20%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%EC%9D%B4%20%ED%8C%8C%EC%88%98%EA%BE%BC%20%EC%97%AD%ED%95%A0" class="link linkedin" target="_blank" >
+                                <i class="fa fa-linkedin"></i></a>
+
+                             <a href="https://telegram.me/share/url?url=http://127.0.0.1/wordpress/2022/01/10/%ec%9d%b8%ea%b3%b5%ec%a7%80%eb%8a%a5%ec%9d%b4-%eb%a7%8c%eb%93%a4%ec%96%b4-%eb%82%b8-%ea%b0%80%ec%a7%9c-%eb%89%b4%ec%8a%a4-%ec%9d%b8%ea%b3%b5%ec%a7%80%eb%8a%a5%ec%9d%b4-%ed%8c%8c%ec%88%98%ea%be%bc/&amp;text&amp;title=%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%EC%9D%B4%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%82%B8%20%EA%B0%80%EC%A7%9C%20%EB%89%B4%EC%8A%A4%20%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%EC%9D%B4%20%ED%8C%8C%EC%88%98%EA%BE%BC%20%EC%97%AD%ED%95%A0" class="link telegram" target="_blank" >
+                                <i class="fa fa-telegram"></i></a>
+
+                              <a href="javascript:pinIt();" class="link pinterest"><i class="fa fa-pinterest"></i></a>    
+                          </div>
+                    </div>
+
+                <div class="clearfix mb-3"></div>
+                
+	<nav class="navigation post-navigation" role="navigation" aria-label="Posts">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="../%ed%8c%8c%ec%9b%8c%eb%b3%bc%ea%b2%8c%ec%9e%84-%ea%b5%ac%ea%b0%84%ec%97%90-%eb%8c%80%ed%95%9c-%eb%85%b8%ed%95%98%ec%9a%b0-%ec%a4%91-%ec%86%90%ec%8b%a4%eb%b3%b5%ea%b5%ac-%ec%9a%b4%ec%98%81%ec%a0%84/index.html" rel="prev">파워볼게임 구간에 대한 노하우 중 손실복구 운영전략 <div class="fa fa-angle-double-right"></div><span></span></a></div></div>
+	</nav>                          </article>
+            </div>
+		                 <div class="media mg-info-author-block">
+            <a class="mg-author-pic" href="../../../../author/user/index.html"><img alt='' src='http://2.gravatar.com/avatar/b58996c504c5638798eb6b511e6f49af?s=150&amp;d=mm&amp;r=g' srcset='http://2.gravatar.com/avatar/b58996c504c5638798eb6b511e6f49af?s=300&#038;d=mm&#038;r=g 2x' class='avatar avatar-150 photo' height='150' width='150' loading='lazy'/></a>
+                <div class="media-body">
+                  <h4 class="media-heading">By <a href ="../../../../author/user/index.html">user</a></h4>
+                  <p></p>
+                </div>
+            </div>
+                          <div class="mg-featured-slider p-3 mb-4">
+                        <!--Start mg-realated-slider -->
+                        <div class="mg-sec-title">
+                            <!-- mg-sec-title -->
+                                                        <h4>Related Post</h4>
+                        </div>
+                        <!-- // mg-sec-title -->
+                           <div class="row">
+                                <!-- featured_post -->
+                                                                      <!-- blog -->
+                                  <div class="col-md-4">
+                                    <div class="mg-blog-post-3 minh back-img" 
+                                    >
+                                      <div class="mg-blog-inner">
+                                                                                      <div class="mg-blog-category"> <a class="newsup-categories category-color-1" href="../../../../category/uncategorized/index.html" alt="View all posts in Uncategorized"> 
+                                 Uncategorized
+                             </a>                                          </div>                                             <h4 class="title"> <a href="../%ed%8c%8c%ec%9b%8c%eb%b3%bc%ea%b2%8c%ec%9e%84-%ea%b5%ac%ea%b0%84%ec%97%90-%eb%8c%80%ed%95%9c-%eb%85%b8%ed%95%98%ec%9a%b0-%ec%a4%91-%ec%86%90%ec%8b%a4%eb%b3%b5%ea%b5%ac-%ec%9a%b4%ec%98%81%ec%a0%84/index.html" title="Permalink to: 파워볼게임 구간에 대한 노하우 중 손실복구 운영전략">
+                                              파워볼게임 구간에 대한 노하우 중 손실복구 운영전략</a>
+                                             </h4>
+                                            <div class="mg-blog-meta"> 
+                                                                                          <span class="mg-blog-date"><i class="fa fa-clock-o"></i> 
+                                              Jan 10, 2022</span>
+                                                                                        <a href="../../../../author/user/index.html"> <i class="fa fa-user-circle-o"></i> user</a>
+                                             </div>
+                                                                                    </div>
+                                    </div>
+                                  </div>
+                                    <!-- blog -->
+                                                                        <!-- blog -->
+                                  <div class="col-md-4">
+                                    <div class="mg-blog-post-3 minh back-img" 
+                                    >
+                                      <div class="mg-blog-inner">
+                                                                                      <div class="mg-blog-category"> <a class="newsup-categories category-color-1" href="../../../../category/uncategorized/index.html" alt="View all posts in Uncategorized"> 
+                                 Uncategorized
+                             </a>                                          </div>                                             <h4 class="title"> <a href="../%ed%8c%8c%ec%9b%8c%eb%b3%bc%ea%b2%8c%ec%9e%84-%ec%97%90%ec%84%9c-%ea%b0%95%ec%8a%b9%eb%b6%80-%ea%b5%ac%ea%b0%84-%ea%b3%b5%eb%9e%b5%ec%97%90-%eb%8c%80%ed%95%9c-%ec%83%88%eb%a1%9c%ec%9a%b4-%ed%8c%8c/index.html" title="Permalink to: 파워볼게임 에서 강승부 구간 공략에 대한 새로운 파워볼배팅 방법">
+                                              파워볼게임 에서 강승부 구간 공략에 대한 새로운 파워볼배팅 방법</a>
+                                             </h4>
+                                            <div class="mg-blog-meta"> 
+                                                                                          <span class="mg-blog-date"><i class="fa fa-clock-o"></i> 
+                                              Jan 10, 2022</span>
+                                                                                        <a href="../../../../author/user/index.html"> <i class="fa fa-user-circle-o"></i> user</a>
+                                             </div>
+                                                                                    </div>
+                                    </div>
+                                  </div>
+                                    <!-- blog -->
+                                                                        <!-- blog -->
+                                  <div class="col-md-4">
+                                    <div class="mg-blog-post-3 minh back-img" 
+                                    >
+                                      <div class="mg-blog-inner">
+                                                                                      <div class="mg-blog-category"> <a class="newsup-categories category-color-1" href="../../../../category/uncategorized/index.html" alt="View all posts in Uncategorized"> 
+                                 Uncategorized
+                             </a>                                          </div>                                             <h4 class="title"> <a href="../%ed%8c%8c%ec%9b%8c%eb%b3%bc%ea%b2%8c%ec%9e%84-%ec%97%90%ec%84%9c-%eb%8b%a8%ea%b8%b0%ec%a0%81%ec%9c%bc%eb%a1%9c-%ea%b3%b5%eb%9e%b5%ed%95%a0-%ec%88%98-%ec%9e%88%eb%8a%94-%ea%b0%95%ec%8a%b9%eb%b6%80/index.html" title="Permalink to: 파워볼게임 에서 단기적으로 공략할 수 있는 강승부배팅 시점">
+                                              파워볼게임 에서 단기적으로 공략할 수 있는 강승부배팅 시점</a>
+                                             </h4>
+                                            <div class="mg-blog-meta"> 
+                                                                                          <span class="mg-blog-date"><i class="fa fa-clock-o"></i> 
+                                              Jan 10, 2022</span>
+                                                                                        <a href="../../../../author/user/index.html"> <i class="fa fa-user-circle-o"></i> user</a>
+                                             </div>
+                                                                                    </div>
+                                    </div>
+                                  </div>
+                                    <!-- blog -->
+                                                                </div>
+                            
+                    </div>
+                    <!--End mg-realated-slider -->
+                  <div id="comments" class="comments-area mg-card-box padding-20">
+
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Cancel reply</a></small></h3><form action="http://127.0.0.1/wordpress/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='23' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+	</div><!-- #comments -->      </div>
+             <!--sidebar-->
+          <!--col-md-3-->
+            <aside class="col-md-3">
+                  
+<aside id="secondary" class="widget-area" role="complementary">
+	<div id="sidebar-right" class="mg-sidebar">
+		<div id="block-2" class="mg-widget widget_block widget_search"><form role="search" method="get" action="http://127.0.0.1/wordpress/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"><label for="wp-block-search__input-1" class="wp-block-search__label">Search</label><div class="wp-block-search__inside-wrapper"><input type="search" id="wp-block-search__input-1" class="wp-block-search__input" name="s" value="" placeholder=""  required /><button type="submit" class="wp-block-search__button ">Search</button></div></form></div><div id="block-3" class="mg-widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container"><h2>Recent Posts</h2><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a href="index.html">인공지능이 만들어 낸 가짜 뉴스 인공지능이 파수꾼 역할</a></li>
+<li><a href="../%ed%8c%8c%ec%9b%8c%eb%b3%bc%ea%b2%8c%ec%9e%84-%ea%b5%ac%ea%b0%84%ec%97%90-%eb%8c%80%ed%95%9c-%eb%85%b8%ed%95%98%ec%9a%b0-%ec%a4%91-%ec%86%90%ec%8b%a4%eb%b3%b5%ea%b5%ac-%ec%9a%b4%ec%98%81%ec%a0%84/index.html">파워볼게임 구간에 대한 노하우 중 손실복구 운영전략</a></li>
+<li><a href="../%ed%8c%8c%ec%9b%8c%eb%b3%bc%ea%b2%8c%ec%9e%84-%ec%97%90%ec%84%9c-%ea%b0%95%ec%8a%b9%eb%b6%80-%ea%b5%ac%ea%b0%84-%ea%b3%b5%eb%9e%b5%ec%97%90-%eb%8c%80%ed%95%9c-%ec%83%88%eb%a1%9c%ec%9a%b4-%ed%8c%8c/index.html">파워볼게임 에서 강승부 구간 공략에 대한 새로운 파워볼배팅 방법</a></li>
+<li><a href="../%ed%8c%8c%ec%9b%8c%eb%b3%bc%ea%b2%8c%ec%9e%84-%ec%97%90%ec%84%9c-%eb%8b%a8%ea%b8%b0%ec%a0%81%ec%9c%bc%eb%a1%9c-%ea%b3%b5%eb%9e%b5%ed%95%a0-%ec%88%98-%ec%9e%88%eb%8a%94-%ea%b0%95%ec%8a%b9%eb%b6%80/index.html">파워볼게임 에서 단기적으로 공략할 수 있는 강승부배팅 시점</a></li>
+<li><a href="../%ed%8c%8c%ec%9b%8c%eb%b3%bc%ea%b2%8c%ec%9e%84-%ec%9d%b4-%ec%9e%a5%ea%b8%b0%ec%a0%81%ec%9c%bc%eb%a1%9c-%ec%a7%84%ed%96%89%eb%90%a0-%eb%95%8c-%ed%9a%a8%ec%9c%a8%ec%a0%81%ec%9d%b8-%eb%b0%b0%ed%8c%85/index.html">파워볼게임 이 장기적으로 진행될 때 효율적인 배팅법 공개</a></li>
+</ul></div></div></div><div id="block-4" class="mg-widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container"><h2>Recent Comments</h2><div class="no-comments wp-block-latest-comments">No comments to show.</div></div></div></div>	</div>
+</aside><!-- #secondary -->
+            </aside>
+          <!--/col-md-3-->
+      <!--/sidebar-->
+          </div>
+  </div>
+</main>
+  <div class="container-fluid mr-bot40 mg-posts-sec-inner">
+        <div class="missed-inner">
+        <div class="row">
+                        <div class="col-md-12">
+                <div class="mg-sec-title">
+                    <!-- mg-sec-title -->
+                    <h4>You missed</h4>
+                </div>
+            </div>
+                            <!--col-md-3-->
+                <div class="col-md-3 col-sm-6 pulse animated">
+               <div class="mg-blog-post-3 minh back-img" 
+                            >
+                            <a class="link-div" href="index.html"></a>
+                    <div class="mg-blog-inner">
+                      <div class="mg-blog-category">
+                      <a class="newsup-categories category-color-1" href="../../../../category/uncategorized/index.html" alt="View all posts in Uncategorized"> 
+                                 Uncategorized
+                             </a>                      </div>
+                      <h4 class="title"> <a href="index.html" title="Permalink to: 인공지능이 만들어 낸 가짜 뉴스 인공지능이 파수꾼 역할"> 인공지능이 만들어 낸 가짜 뉴스 인공지능이 파수꾼 역할</a> </h4>
+                          <div class="mg-blog-meta">
+        <span class="mg-blog-date"><i class="fa fa-clock-o"></i>
+         <a href="../../index.html">
+         Jan 10, 2022</a></span>
+         <a class="auth" href="../../../../author/user/index.html"><i class="fa fa-user-circle-o"></i> 
+        user</a>
+         
+    </div>
+                        </div>
+                </div>
+            </div>
+            <!--/col-md-3-->
+                         <!--col-md-3-->
+                <div class="col-md-3 col-sm-6 pulse animated">
+               <div class="mg-blog-post-3 minh back-img" 
+                            >
+                            <a class="link-div" href="../%ed%8c%8c%ec%9b%8c%eb%b3%bc%ea%b2%8c%ec%9e%84-%ea%b5%ac%ea%b0%84%ec%97%90-%eb%8c%80%ed%95%9c-%eb%85%b8%ed%95%98%ec%9a%b0-%ec%a4%91-%ec%86%90%ec%8b%a4%eb%b3%b5%ea%b5%ac-%ec%9a%b4%ec%98%81%ec%a0%84/index.html"></a>
+                    <div class="mg-blog-inner">
+                      <div class="mg-blog-category">
+                      <a class="newsup-categories category-color-1" href="../../../../category/uncategorized/index.html" alt="View all posts in Uncategorized"> 
+                                 Uncategorized
+                             </a>                      </div>
+                      <h4 class="title"> <a href="../%ed%8c%8c%ec%9b%8c%eb%b3%bc%ea%b2%8c%ec%9e%84-%ea%b5%ac%ea%b0%84%ec%97%90-%eb%8c%80%ed%95%9c-%eb%85%b8%ed%95%98%ec%9a%b0-%ec%a4%91-%ec%86%90%ec%8b%a4%eb%b3%b5%ea%b5%ac-%ec%9a%b4%ec%98%81%ec%a0%84/index.html" title="Permalink to: 파워볼게임 구간에 대한 노하우 중 손실복구 운영전략"> 파워볼게임 구간에 대한 노하우 중 손실복구 운영전략</a> </h4>
+                          <div class="mg-blog-meta">
+        <span class="mg-blog-date"><i class="fa fa-clock-o"></i>
+         <a href="../../index.html">
+         Jan 10, 2022</a></span>
+         <a class="auth" href="../../../../author/user/index.html"><i class="fa fa-user-circle-o"></i> 
+        user</a>
+         
+    </div>
+                        </div>
+                </div>
+            </div>
+            <!--/col-md-3-->
+                         <!--col-md-3-->
+                <div class="col-md-3 col-sm-6 pulse animated">
+               <div class="mg-blog-post-3 minh back-img" 
+                            >
+                            <a class="link-div" href="../%ed%8c%8c%ec%9b%8c%eb%b3%bc%ea%b2%8c%ec%9e%84-%ec%97%90%ec%84%9c-%ea%b0%95%ec%8a%b9%eb%b6%80-%ea%b5%ac%ea%b0%84-%ea%b3%b5%eb%9e%b5%ec%97%90-%eb%8c%80%ed%95%9c-%ec%83%88%eb%a1%9c%ec%9a%b4-%ed%8c%8c/index.html"></a>
+                    <div class="mg-blog-inner">
+                      <div class="mg-blog-category">
+                      <a class="newsup-categories category-color-1" href="../../../../category/uncategorized/index.html" alt="View all posts in Uncategorized"> 
+                                 Uncategorized
+                             </a>                      </div>
+                      <h4 class="title"> <a href="../%ed%8c%8c%ec%9b%8c%eb%b3%bc%ea%b2%8c%ec%9e%84-%ec%97%90%ec%84%9c-%ea%b0%95%ec%8a%b9%eb%b6%80-%ea%b5%ac%ea%b0%84-%ea%b3%b5%eb%9e%b5%ec%97%90-%eb%8c%80%ed%95%9c-%ec%83%88%eb%a1%9c%ec%9a%b4-%ed%8c%8c/index.html" title="Permalink to: 파워볼게임 에서 강승부 구간 공략에 대한 새로운 파워볼배팅 방법"> 파워볼게임 에서 강승부 구간 공략에 대한 새로운 파워볼배팅 방법</a> </h4>
+                          <div class="mg-blog-meta">
+        <span class="mg-blog-date"><i class="fa fa-clock-o"></i>
+         <a href="../../index.html">
+         Jan 10, 2022</a></span>
+         <a class="auth" href="../../../../author/user/index.html"><i class="fa fa-user-circle-o"></i> 
+        user</a>
+         
+    </div>
+                        </div>
+                </div>
+            </div>
+            <!--/col-md-3-->
+                         <!--col-md-3-->
+                <div class="col-md-3 col-sm-6 pulse animated">
+               <div class="mg-blog-post-3 minh back-img" 
+                            >
+                            <a class="link-div" href="../%ed%8c%8c%ec%9b%8c%eb%b3%bc%ea%b2%8c%ec%9e%84-%ec%97%90%ec%84%9c-%eb%8b%a8%ea%b8%b0%ec%a0%81%ec%9c%bc%eb%a1%9c-%ea%b3%b5%eb%9e%b5%ed%95%a0-%ec%88%98-%ec%9e%88%eb%8a%94-%ea%b0%95%ec%8a%b9%eb%b6%80/index.html"></a>
+                    <div class="mg-blog-inner">
+                      <div class="mg-blog-category">
+                      <a class="newsup-categories category-color-1" href="../../../../category/uncategorized/index.html" alt="View all posts in Uncategorized"> 
+                                 Uncategorized
+                             </a>                      </div>
+                      <h4 class="title"> <a href="../%ed%8c%8c%ec%9b%8c%eb%b3%bc%ea%b2%8c%ec%9e%84-%ec%97%90%ec%84%9c-%eb%8b%a8%ea%b8%b0%ec%a0%81%ec%9c%bc%eb%a1%9c-%ea%b3%b5%eb%9e%b5%ed%95%a0-%ec%88%98-%ec%9e%88%eb%8a%94-%ea%b0%95%ec%8a%b9%eb%b6%80/index.html" title="Permalink to: 파워볼게임 에서 단기적으로 공략할 수 있는 강승부배팅 시점"> 파워볼게임 에서 단기적으로 공략할 수 있는 강승부배팅 시점</a> </h4>
+                          <div class="mg-blog-meta">
+        <span class="mg-blog-date"><i class="fa fa-clock-o"></i>
+         <a href="../../index.html">
+         Jan 10, 2022</a></span>
+         <a class="auth" href="../../../../author/user/index.html"><i class="fa fa-user-circle-o"></i> 
+        user</a>
+         
+    </div>
+                        </div>
+                </div>
+            </div>
+            <!--/col-md-3-->
+                     
+
+                </div>
+            </div>
+        </div>
+<!--==================== FOOTER AREA ====================-->
+        <footer> 
+            <div class="overlay" style="background-color: ;">
+                <!--Start mg-footer-widget-area-->
+                                 <!--End mg-footer-widget-area-->
+                <!--Start mg-footer-widget-area-->
+                <div class="mg-footer-bottom-area">
+                    <div class="container-fluid">
+                        <div class="divide-line"></div>
+                        <div class="row align-items-center">
+                            <!--col-md-4-->
+                            <div class="col-md-6">
+                                                             <div class="site-branding-text">
+                              <h1 class="site-title"> <a href="../../../../index.html" rel="home">powerball algorithm blog</a></h1>
+                              <p class="site-description">Just another WordPress site</p>
+                              </div>
+                                                          </div>
+
+                             
+                            <div class="col-md-6 text-right text-xs">
+                                
+                            <ul class="mg-social">
+                                                                        <a target="_blank" href="#">
+                                                                        <a target="_blank"  href="#">
+                                                                         
+                                                                 </ul>
+
+
+                            </div>
+                            <!--/col-md-4-->  
+                             
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/container-->
+                </div>
+                <!--End mg-footer-widget-area-->
+
+                <div class="mg-footer-copyright">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 text-xs">
+                                <p>
+                                <a href="https://wordpress.org/">
+								Proudly powered by WordPress								</a>
+								<span class="sep"> | </span>
+								Theme: News Talk by <a href="https://themeansar.com/" rel="designer">Themeansar</a>.								</p>
+                            </div>
+
+
+
+                            <div class="col-md-6 text-right text-xs">
+                                <ul class="info-right"><li class="nav-item menu-item "><a class="nav-link " href="../../../../index.html" title="Home">Home</a></li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/overlay-->
+        </footer>
+        <!--/footer-->
+    </div>
+    <!--/wrapper-->
+    <!--Scroll To Top-->
+    <a href="#" class="ta_upscr bounceInup animated"><i class="fa fa-angle-up"></i></a>
+    <!--/Scroll To Top-->
+<!-- /Scroll To Top -->
+<script>
+jQuery('a,input').bind('focus', function() {
+    if(!jQuery(this).closest(".menu-item").length && ( jQuery(window).width() <= 992) ) {
+    jQuery('.navbar-collapse').removeClass('show');
+}})
+</script>
+<script type='text/javascript' src='../../../../wp-includes/js/comment-reply.minc8d8.js?ver=5.8.3' id='comment-reply-js'></script>
+<script type='text/javascript' src='../../../../wp-includes/js/wp-embed.minc8d8.js?ver=5.8.3' id='wp-embed-js'></script>
+<script type='text/javascript' src='../../../../wp-content/themes/newsup/js/customc8d8.js?ver=5.8.3' id='newsup-custom-js'></script>
+<script type='text/javascript' src='../../../../wp-content/themes/newsup/js/custom-timec8d8.js?ver=5.8.3' id='newsup-custom-time-js'></script>
+	<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	</script>
+	</body>
+
+<!-- Mirrored from 127.0.0.1/wordpress/2022/01/10/인공지능이-만들어-낸-가짜-뉴스-인공지능이-파수꾼/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Jan 2022 06:43:17 GMT -->
+</html>
